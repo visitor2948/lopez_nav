@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>New features in this release - Audacity Manual</title>
+
+
+
+
+<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-New_features_in_this_release rootpage-New_features_in_this_release skin-monobook action-view"><div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">New features in this release</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Audacity Development Manual</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/New_features_in_this_release#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><br />
+</p>
+<center><a href="http://audacityteam.org/" title="size=50%" rel="nofollow"><img alt="size=50%" src="../m/images/8/88/audacity_logo_signika_512_transparent.png" width="512" height="138" /></a></center>
+<div class="intro"><span style="font-size:120%"><b>This page is an overview of the key new functionality that has been introduced in Audacity 2.3.1</b></span>
+<ul><li> <span style="font-size:110%">Details of all the major changes since 2.3.0 can be found in <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Release_Notes_2.3.0">Release Notes 2.3.1</a>.</span></div></li></ul>
+<h2><span class="mw-headline" id="Contents">Contents</span></h2>
+<ol><li><a href="#mac64">64-bit Mac build</a></li>
+<li><a href="#scrubruler">Scrub Ruler</a></li>
+<li><a href="#avz">Advanced Vertical Zooming</a></li>
+<li><a href="#microfades">Micro-fades option added</a></li>
+<li><a href="#ril">Regular Interval Labels improvements</a></li>
+<li><a href="#bugs">Bug Fixes</a></li></ol>
+</li></ul></li></ul>
+</li></ol>
+<p><br />
+</p>
+<div id="mac64"></div>
+<h2><span class="mw-headline" id="64-bit_Mac_build">64-bit Mac build</span></h2>
+<p>The 2.3.1 release of Audacity for macOS is now a 64-bit build and will only run on modern 64-bit Macs, running OSX 10.7 or later.
+</p><p>Note carefully that if you use the <a href="installing_and_updating_audacity_on_mac_os_x.html#maclame" title="Installing and updating Audacity on Mac OS X"><b>LAME</b></a> library for MP3 export or the <a href="installing_and_updating_audacity_on_mac_os_x.html#macff" title="Installing and updating Audacity on Mac OS X"><b>FFmpeg</b></a> library you will need to install the 64-bit versions of those libraries.
+</p><p><i>FFmpeg is used for importing and exporting a much larger <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/FFmpeg_integration#Functionality">range of audio formats</a> including </i><b><a href="glossary.html#aac" title="Glossary">M4A (AAC)</a></b><i>, AC3, AMR (narrow band) and </i><b><a href="glossary.html#wma" title="Glossary">WMA</a></b><i>. </i>
+</p><p><br />
+</p>
+<div id="scrubruler"></div>
+<h2><span class="mw-headline" id="Scrub_Ruler">Scrub Ruler</span></h2>
+<p>The <a href="scrubbing_and_seeking.html#scrubruler" title="Scrubbing and Seeking">Scrub Ruler</a> is now turned <b>"off"</b> by default and is not displayed.  The reason we did this was because we found too many users were accidentally clicking in the Scrub Ruler and then finding themselves stuck in Scrubbing mode.
+</p><p>This will only affect you if you opt to reset your preferences settings as part of the 2.3.1 installation, manually reset your preferences or install Audacity for the first time.
+</p><p>If you want/need to turn it back on again use either the <span class="menu">Transport &gt; <a href="transport_menu_scrubbing.html" title="Transport Menu: Scrubbing">Scrubbing</a></span> and check the Scrub Ruler to be "on".  Or right click in the <b><a href="timeline.html" title="Timeline">Timeline</a></b> and select <b><a href="timeline.html#menu" title="Timeline">Enable Scrub Ruler</a></b>.
+</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">The <b>Scrub</b> and <b>Seek</b> commands are still readily available from the <a href="transport_menu_scrubbing.html" title="Transport Menu: Scrubbing"><b>Transport</b></a> menu.
+</td></tr></table>
+</div>
+<p><br />
+</p>
+<div id="avz"></div>
+<h2><span class="mw-headline" id="Advanced_Vertical_Zooming">Advanced Vertical Zooming</span></h2>
+<p>We have added a new command to the <span class="menu"> View &gt; <a href="view_menu_zoom.html" title="View Menu: Zoom">Zoom</a></span> menu for turning <b><a href="vertical_zooming.html#advanced" title="Vertical Zooming">Advanced Vertical Zooming</a></b> "on" or "off".
+</p><p>Advanced Vertical Zooming enables you to use left-click gestures in the <a href="audio_tracks.html#scale" title="Audio Tracks">Vertical Scale</a> to control zooming <i>(this is in addition to the Simple mode vertical zooming commands available from the right-click context menu in the Vertical Scale)</i>. 
+</p>
+<div class="note">In version 2.2.2 we changed the way <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Release_Notes_2.2.2#Vertical_Zooming_changes">vertical zooming</a> works, splitting it into Simple and Advanced forms with the Advanced form turned off by default.  Advanced mode could be turned on in <a href="tracks_behaviors_preferences.html" title="Tracks Behaviors Preferences">Tracks Behaviors</a> preferences but many users failed to find it there.  Accordingly we introduced this new command to make this more discoverable. </div>
+<p><br />
+</p>
+<div id="microfades"></div>
+<h2><span class="mw-headline" id="Micro_Fades">Micro Fades</span></h2>
+<p>Micro fades (introduced in 2.3.0) can reduce the click when playback starts and stops.  We've now made this an opt-in feature rather than provide it all the time, this can be set in <a href="playback_preferences.html#options" title="Playback Preferences">Playback Preferences</a>. 
+</p><p><br />
+</p>
+<div id="ril"></div>
+<h2><span class="mw-headline" id="Regular_Interval_Labels_improvements">Regular Interval Labels improvements</span></h2>
+<p>We have made some improvements to Regular Interval Labels, accessed by <span class="menu"> Tools &gt; <a href="regular_interval_labels.html" title="Regular Interval Labels">Regular Interval Labels</a> </span>.
+</p><p>In particular we have made it possible to create <a href="label_tracks.html#type" title="Label Tracks"><b>range labels</b></a> and not just point labels with this Tool.  You can do this by specifying the label length in the new input field <b>Length of label region (seconds)</b>
+</p><p>See <a href="regular_interval_labels.html" title="Regular Interval Labels"><b>this page</b></a> for full details of how the improved Tool works.
+</p><p><br />
+</p>
+<div id="bugs"></div>
+<h2><span class="mw-headline" id="Bug_Fixes">Bug Fixes</span></h2>
+<ul><li>Linux: Audacity 2.3.0 was available only for Mac and Windows, and Linux used 2.2.1.  Audacity 2.3.1 is available for Linux.</li>
+<li>Windows and Linux: Intermittent truncation of the end of a recording - see <a rel="nofollow" class="external text" href="https://bugzilla.audacityteam.org/show_bug.cgi?id=2009">Bug #2009</a></li>
+<li>Can't adjust Time Track envelope when Logarithmic scale selected - see <a rel="nofollow" class="external text" href="https://bugzilla.audacityteam.org/show_bug.cgi?id=1832">Bug #1832</a></li>
+<li>Mixer Board does not automatically update when tracks added or removed - see <a rel="nofollow" class="external text" href="https://bugzilla.audacityteam.org/show_bug.cgi?id=2022">Bug #2022</a></li>
+<li>Regular Interval Labels fails - see <a rel="nofollow" class="external text" href="https://bugzilla.audacityteam.org/show_bug.cgi?id=2014">Bug #2014</a></li>
+<li>Windows: Regular Interval Labels on multiple tracks produces multiple labels - see <a rel="nofollow" class="external text" href="https://bugzilla.audacityteam.org/show_bug.cgi?id=1298">Bug #1298</a></li>
+<li>Multiple problems with Change Pitch - see <a rel="nofollow" class="external text" href="https://bugzilla.audacityteam.org/show_bug.cgi?id=2016">Bug #2016</a></li>
+<li>Mac:  Audacity crashes when right clicking in label after copying label text to ano app - see <a rel="nofollow" class="external text" href="https://bugzilla.audacityteam.org/show_bug.cgi?id=2028">Bug #2028</a></li>
+<li>Linux: Assert on recording or generating when main Window minimized  - see <a rel="nofollow" class="external text" href="https://bugzilla.audacityteam.org/show_bug.cgi?id=2040">Bug #2040</a></li>
+<li>Windows:  Macros - "ExportMP3 before" and "ExportMP3 after" overwrite causing non-critical data loss  - see <a rel="nofollow" class="external text" href="https://bugzilla.audacityteam.org/show_bug.cgi?id=2054">Bug #2054</a></li>
+<li>Macros: Change Pitch in a Macro does not remember speed parameter setting  - see <a rel="nofollow" class="external text" href="https://bugzilla.audacityteam.org/show_bug.cgi?id=2069">Bug #2069</a></li></ul>
+<p><br />
+</p><p><br />
+</p><p><br />
+</p>
+<div id="appendix"></div>
+
+<h2><span class="mw-headline" id="Links">Links</span></h2>
+<p><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Release_Notes_2.3.1"><b>&gt;</b> Audacity Release Notes 2.3.1</a> <i>- detailed release notes for this release of Audacity</i>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190226100438
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.076 seconds
+Real time usage: 0.081 seconds
+Preprocessor visited node count: 113/1000000
+Preprocessor generated node count: 330/1000000
+Post‐expand include size: 2154/2097152 bytes
+Template argument size: 1598/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    9.710      1 - -total
+ 28.83%    2.799      1 - Template:Intro
+ 16.23%    1.576      3 - Template:Ednote
+ 14.47%    1.405      3 - Template:Menu
+ 11.14%    1.082      1 - Template:Note
+ 10.87%    1.055      1 - Template:Tip
+-->
+
+<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:5555-0!*!0!!*!5!* and timestamp 20190226100438 and revision id 63360
+ -->
+</div>
+										<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			
+					
+				
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+					
+		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">Manual Home Page</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">Using Audacity</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">Tour Guide</span></a></li>
+<li> <a href="#" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">New Features</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">Getting Started</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">Tutorials</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">Tips</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">Audacity GUI</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">Menu Bar</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">Toolbars</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">Tracks</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">Effects</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">Customizing</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">Preferences</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">Key-bindings</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">Plug-ins</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">Themes</span></a></li></ul></li></ul>
+		</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
+		<h3>Reference</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">Reference</span></a>
+<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">Digital Audio</span></a></li>
+<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">Glossary</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">All Commands</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">Errors</span></a></li>
+<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">Index</span></a></li></ul></li>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">FAQ</span></a></li></ul>
+		</div>
+		</div>
+		
+		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
+		<h3>Useful Links</h3>
+		<div class='pBody'>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">Forum</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">Wiki</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">Latest Release</a></span></li>
+<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">What is That?</a></span></li></ul>
+		</div>
+		</div>
+		
+			
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									
+							</div>
+					<div id="f-poweredbyico">
+									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					
+		<div align="center"><ul id="f_list"><li>This version created on 2019-02-26 - <a href="https://alphamanual.audacityteam.org/man/New_features_in_this_release">Check current version of this page (development Manual)</a></li></ul></div>
+</div>
+		</div>
+		</body></html>
